@@ -6,13 +6,17 @@
 </head>
 <body>
 
-<form onsubmit="emailsend()">
+<form onsubmit="sendEmail()"> 
   <label for="firstName">First Name:</label>
   <input type="text" id="firstName" name="firstName" required>
   <br>
  
-  <label for="email">Email Address:</label>
-  <input type="email" id="email" name="email" required>
+  <label for="place">Místo kde jseš</label>
+  <input type="text" id="place" name="place" required>
+  <br>
+
+  <label for="phone">Telefonní číslo:</label>
+  <textarea name="phone" id="phone"></textarea>
   <br>
  
   <label for="message">Message:</label>
@@ -25,4 +29,6 @@
 </body>
 </html>
 <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="mail.js">
 </script>

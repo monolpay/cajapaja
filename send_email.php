@@ -4,7 +4,7 @@ $errors = [];
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get POST data
     $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
-    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $place = isset($_POST['place']) ? trim($_POST['place']) : '';
     $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
 
     // Validate form fields
@@ -12,14 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors[] = 'Name is empty';
     }
 
-    if (empty($email)) {
-        $errors[] = 'Email is empty';
-    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Email is invalid';
+    if (empty($place)) {
+        $errors[] = 'Nevím kam to mám doručit, brácho';
     }
 
     if (empty($message)) {
-        $errors[] = 'Message is empty';
+        $errors[] = '';
     }
 
     // If no errors, send email
