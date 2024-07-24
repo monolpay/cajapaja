@@ -24,6 +24,7 @@ input, textarea {
     /* border-radius: 20px / 20px; */
     padding: 5px;
     box-sizing: border-box;
+    font-size: 2vh;
 }
 
 textarea {
@@ -42,13 +43,13 @@ textarea {
 }
 
 
-@media (pointer:none), (pointer:coarse), (width <= 1080px)  { 
-    input, textarea {
+@media (pointer:none), (pointer:coarse), (width < 1080px) { 
+    input, textarea, #submit {
         width: 50vh;
         max-width: 95%;
         margin: 10px;
         height: 10vh;
-        
+        font-size: 5vh;
     }
 }
 
