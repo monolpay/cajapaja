@@ -2,28 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Form</title>
+  <title>Čájapája</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Objednavaci systém pro čaj</h1>
+<h1>Objednávací systém pro čaj</h1>
 <form onsubmit="sendEmail()"> 
-  <label for="firstName">First Name:</label>
-  <input type="text" id="firstName" name="firstName" required>
+  <input type="text" id="firstName" name="firstName" required placeholder="Vaše jméno:">
   <br>
  
-  <label for="place">Místo kde jseš</label>
-  <input type="text" id="place" name="place" required>
+  <input type="text" id="place" name="place" required placeholder="Místo kde jseš:">
   <br>
 
-  <label for="phone">Telefonní číslo:</label>
-  <textarea name="phone" id="phone"></textarea>
+  <input type="text" name="phone" id="phone" required placeholder="Telefonní číslo:"></input>
   <br>
  
-  <label for="message">Vaše objednávka:</label>
-  <textarea id="message" name="message" required></textarea>
+  <input type="text" id="message" name="message" required placeholder="Vaše objednávka:"></input>
   <br>
  
-  <input type="submit" value="Send">
+  <input type="submit" value="Odeslat objednávku" id="submit">
 </form>
 
 </body>
