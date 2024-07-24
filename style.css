@@ -43,7 +43,7 @@ textarea {
 }
 
 
-@media (pointer:none), (pointer:coarse), (width < 1080px) { 
+@media screen and (pointer:none), (pointer:coarse), (width < 1080px) { 
     input, textarea, #submit {
         width: 50vh;
         max-width: 95%;
