@@ -41,7 +41,8 @@ textarea {
     background-color: rgb(252, 164, 0);
 }
 
-@media screen and (width <= 1080px)  { 
+
+@media (pointer:none), (pointer:coarse), (width <= 1080px)  { 
     input, textarea {
         width: 50vh;
         max-width: 95%;
