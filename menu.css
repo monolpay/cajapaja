@@ -1,11 +1,12 @@
 #menubar {
     position: fixed;
-    right: 200%;
+    left: 200%;
     padding: 120px;
     background-color: white;
     width: 70%;
     height: 100%;
     z-index: 20;
+    text-align: center;
 }
 
 #menu img{
@@ -24,11 +25,11 @@
 }
 
 @keyframes menuOut {
-    from {right: 200%;}
-    to {right: 0%;}
+    from {left: 200%;}
+    to {left: 0%;}
 }
 
 @keyframes menuIn {
-    to {right: 200%;}
-    from {right: 0%;}
+    to {left: 200%;}
+    from {left: 0%;}
 }

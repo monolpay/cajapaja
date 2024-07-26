@@ -75,7 +75,8 @@ body {
 
 form {
     /* border: 2px solid red; */
-
+    position: relative;
+    z-index: -1;
     text-align: center;
 }
 
@@ -117,7 +118,8 @@ textarea {
 }
 
 
-@media screen and (pointer:none), (pointer:coarse), (width < 1080px) { 
+
+@media screen and  (width < 1000px) { 
     input, textarea, #submit {
         width: 50vh;
         max-width: 95%;
@@ -135,10 +137,21 @@ textarea {
     }
 
     #menu img {
-        height: 50px;
+        height: 45px;
         position: fixed;
-        top: 160px;
+        top: 35px;
         left: 5%;
+    }
+
+    header img {
+        height: 90px;
+        position: relative;
+        left: 60px;
+        top: 10px;
+    }
+
+    header h1 {
+        top: 0px;
     }
 }
 
