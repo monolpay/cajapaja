@@ -76,7 +76,6 @@ body {
 form {
     /* border: 2px solid red; */
     position: relative;
-    z-index: -1;
     text-align: center;
 }
 
