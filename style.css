@@ -1,6 +1,70 @@
+header img {
+    height: 130px;
+    float: left;
+}
+
+header h1 {
+    position: absolute;
+    left: 180px;
+    top: 20px;
+    /* font-family: "Playwrite HR Lijeva"; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 2px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    display: inline-block;
+    border: 2px solid red;
+    position: absolute;
+    top: 20px;
+}
+
+#nav a {
+    margin: 20px;
+}
+
+#order {
+    height: 120px;
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    border: 2px solid red; /*debug*/
+    background-color: yellow;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#order:hover {
+    filter: brightness(0.8);
+}
+
+#order a {
+    font-size: 3rem;
+    position: relative;
+    top: 25px;
+    padding: 45px;
+}
+
+header {
+    /* background-color: gray; */
+    height: 120px;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid red;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 5px 2%;
 }
 
 form {
