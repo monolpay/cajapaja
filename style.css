@@ -77,6 +77,7 @@ form {
     /* border: 2px solid red; */
     position: relative;
     text-align: center;
+    z-index: -1;
 }
 
 label {
