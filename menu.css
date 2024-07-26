@@ -1,6 +1,18 @@
 #menubar {
     position: fixed;
+    right: 200%;
+    padding: 120px;
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    z-index: 20;
 }
+
+#menu img{
+    /* background-color: white; */
+    z-index: 21;
+}
+
 #menubar a {
     display: block;
     font-size: 2rem;
@@ -8,6 +20,15 @@
 }
 
 #menubar a:hover {
-    background-color: rgb(189, 189, 189);
+    text-decoration: underline;
 }
 
+@keyframes menuOut {
+    from {right: 200%;}
+    to {right: 0%;}
+}
+
+@keyframes menuIn {
+    to {right: 200%;}
+    from {right: 0%;}
+}
