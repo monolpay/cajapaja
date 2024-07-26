@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Čajovna u Čájapáji</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
     </style>
@@ -23,9 +24,17 @@
             </div>
             <div id="order">
                 <a href="order.html">Objednat</a>
-            </div>     
+            </div>
+            <div id="menu">
+                <img src="./img/burger-bar.png" alt="" onclick="menu()">
+              </div>       
         </nav>
-        
+        <div id="menubar">
+            <a href="order.html" id="menuorder">Objednat</a>
+            <a href="">Kde nás najdete</a>
+            <a href="">Recenze</a>
+            <a href="">Fotogalerie</a>
+        </div>
     </header>
     <section>
         <article>
@@ -37,3 +46,5 @@
     </footer>
 </body>
 </html>
+<script src="menu.js">
+</script>

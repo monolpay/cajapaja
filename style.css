@@ -10,7 +10,7 @@ header h1 {
     /* font-family: "Playwrite HR Lijeva"; */
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 a {
@@ -20,13 +20,19 @@ a {
 
 #nav {
     display: inline-block;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
-    top: 20px;
+    top: 40px;
+    right: 30%;
 }
 
 #nav a {
     margin: 20px;
+    font-size: 1.5rem;
+}
+
+#nav a:hover {
+    text-decoration: underline;
 }
 
 #order {
@@ -58,7 +64,7 @@ header {
     position: sticky;
     top: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 body {
@@ -106,6 +112,10 @@ textarea {
     background-color: rgb(252, 164, 0);
 }
 
+#menu {
+    display: none;
+}
+
 
 @media screen and (pointer:none), (pointer:coarse), (width < 1080px) { 
     input, textarea, #submit {
@@ -114,6 +124,21 @@ textarea {
         margin: 10px;
         height: 10vh;
         font-size: 3vh;
+    }
+
+    #nav, #order {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu img {
+        height: 50px;
+        position: fixed;
+        top: 160px;
+        left: 5%;
     }
 }
 

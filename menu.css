@@ -1,0 +1,13 @@
+#menubar {
+    position: fixed;
+}
+#menubar a {
+    display: block;
+    font-size: 2rem;
+    padding: 40px;
+}
+
+#menubar a:hover {
+    background-color: rgb(189, 189, 189);
+}
+
