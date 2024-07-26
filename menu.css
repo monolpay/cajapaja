@@ -1,0 +1,35 @@
+#menubar {
+    position: fixed;
+    left: 200%;
+    padding: 120px;
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    z-index: 20;
+    text-align: center;
+}
+
+#menu img{
+    /* background-color: white; */
+    z-index: 21;
+}
+
+#menubar a {
+    display: block;
+    font-size: 2rem;
+    padding: 40px;
+}
+
+#menubar a:hover {
+    text-decoration: underline;
+}
+
+@keyframes menuOut {
+    from {left: 200%;}
+    to {left: 0%;}
+}
+
+@keyframes menuIn {
+    to {left: 200%;}
+    from {left: 0%;}
+}

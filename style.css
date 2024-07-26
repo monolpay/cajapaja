@@ -1,11 +1,82 @@
+header img {
+    height: 130px;
+    float: left;
+}
+
+header h1 {
+    position: absolute;
+    left: 180px;
+    top: 20px;
+    /* font-family: "Playwrite HR Lijeva"; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    /* border: 2px solid red; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 40px;
+    right: 30%;
+}
+
+#nav a {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
+
+#order {
+    height: 120px;
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    border: 2px solid red; /*debug*/
+    background-color: yellow;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#order:hover {
+    filter: brightness(0.8);
+}
+
+#order a {
+    font-size: 3rem;
+    position: relative;
+    top: 25px;
+    padding: 45px;
+}
+
+header {
+    /* background-color: gray; */
+    height: 120px;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 2px solid red; */
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 5px 2%;
 }
 
 form {
     /* border: 2px solid red; */
-
+    position: relative;
+    z-index: -1;
     text-align: center;
 }
 
@@ -42,14 +113,45 @@ textarea {
     background-color: rgb(252, 164, 0);
 }
 
+#menu {
+    display: none;
+}
 
-@media screen and (pointer:none), (pointer:coarse), (width < 1080px) { 
+
+
+@media screen and  (width < 1000px) { 
     input, textarea, #submit {
         width: 50vh;
         max-width: 95%;
         margin: 10px;
         height: 10vh;
         font-size: 3vh;
+    }
+
+    #nav, #order {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu img {
+        height: 45px;
+        position: fixed;
+        top: 35px;
+        left: 5%;
+    }
+
+    header img {
+        height: 90px;
+        position: relative;
+        left: 60px;
+        top: 10px;
+    }
+
+    header h1 {
+        top: 0px;
     }
 }
 

@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <title>Čájapája</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Čajovna u Čájapáji</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+    </style>
 </head>
-<body>
-<h1>Objednávací systém pro čaj</h1>
-<form onsubmit="sendEmail()"> 
-  <input type="text" id="firstName" name="firstName" required placeholder="Vaše jméno:">
-  <br>
- 
-  <input type="text" id="place" name="place" required placeholder="Místo kde jseš:">
-  <br>
+<body >
+    <header>
+        <a href="index.html">
+            <h1>Čajovna u Čájapáji</h1>
+            <img src="./img/cajapaja_color.webp" alt="">
+        </a>
+        <nav>
+            <div id="nav">
+                <a href="">Kde nás najdete</a>
+                <a href="">Recenze</a>
+                <a href="">Fotogalerie</a>
+            </div>
+            <div id="order">
+                <a href="order.html">Objednat</a>
+            </div>
+            <div id="menu">
+                <img src="./img/burger-bar.png" alt="" onclick="menu()">
+              </div>       
+        </nav>
+        <div id="menubar">
+            <a href="order.html" id="menuorder">Objednat</a>
+            <a href="">Kde nás najdete</a>
+            <a href="">Recenze</a>
+            <a href="">Fotogalerie</a>
+        </div>
+    </header>
+    <section>
+        <article>
 
-  <input type="text" name="phone" id="phone" required placeholder="Telefonní číslo:"></input>
-  <br>
- 
-  <input type="text" id="message" name="message" required placeholder="Vaše objednávka:"></input>
-  <br>
- 
-  <input type="submit" value="Odeslat objednávku" id="submit">
-</form>
+        </article>
+    </section>
+    <footer>
 
+    </footer>
 </body>
 </html>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script src="mail.js">
+<script src="menu.js">
 </script>
