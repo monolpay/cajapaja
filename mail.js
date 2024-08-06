@@ -11,7 +11,7 @@ function sendEmail() {
   Email.send({
     Host : "smtp.elasticemail.com",
     Username : "jan.naprstek@kcentrum.eu",
-    Password : "899AC3D03B707426E71CF276492168501D7B",
+    Password : pwrd,
     To : 'jan.naprstek@kcentrum.eu',
     From : "jan.naprstek@kcentrum.eu",
     Subject : "Čaj se řítí",
@@ -20,3 +20,5 @@ function sendEmail() {
 })
 alert("Email se odeslal úspěšně")
 }
+
+let pwrd = "D872A906F024A4EAF0A98E3EAA6AAD1D2743"
